@@ -1,82 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jaro:opsz@6..72&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <title>Solomon Hackett</title>
   </head>
-  <body>
-    <div class="nav" id="nav">
-      <ul>
-        <li><a href="#splash">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#qualifications">Qualifications</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        <li><a href="projects.html">My Projects</a></li>
-      </ul>
+  <body
+    class="bg-linear-to-t from-[#07FFFF] to-[#bdbde4] h-screen bg-no-repeat bg-cover"
+  >
+    <header class="fixed w-screen">
+      <nav
+        class="flex justify-center items-center mx-auto py-2 px-5 bg-white/40"
+      >
+        <ul class="flex items-center gap-[4vw] w-fit">
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="#about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="#quals"
+              >Qualifications</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="#contact"
+              >Contact Me</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="projects.html"
+              >My Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      id="home"
+      class="w-full h-full flex flex-col justify-center px-10 text-gray-800"
+    >
+      <h1
+        class="mb-4 text-9xl font-[Archivo Black] font-extrabold text-left underline"
+      >
+        Solomon Hackett
+      </h1>
+      <h2 class="mb-4 text-4xl font-[Dosis] font-extrabold text-left">
+        My portfolio, built from scratch.
+      </h2>
     </div>
-    <div class="splash" id="splash">
-      <div class="heading">
-        <h1>Solomon Hackett</h1>
-        <h2>My profile, coded from scratch</h2>
-      </div>
+    <div id="about">
+      <h1>About Me</h1>
+      <iframe
+        class="w-fit"
+        src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1916860"
+        style="border: none"
+      ></iframe>
+      <p>
+        I am a hardworking, aspiring, and dedicated individual with a broad
+        skill set in IT and a passion for music. I have participatied in
+        WorldSkillsUK Cyber Security placing 5th of out 250, and won silver in
+        the WorldSkillsUK Hackathon. I have also built multiple CTF challenges
+        from scratch and presented a lesson on basic hacking methods to people
+        on my course and the year below. I am known for my leadership abilities
+        and teamwork skills. In addition to my professional experience, I have
+        successfully completed the Duke of Edinburgh's Bronze and Silver Awards.
+      </p>
     </div>
-    <div class="about" id="about">
-      <div class="aboutHeading">
-        <h1>About Me</h1>
-        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1916860" style='border:none;'></iframe>
-
-
-      </div>
-      <div class="info">
-        <p>
-          I am a hardworking, aspiring, and dedicated individual with a broad skill set in IT and a passion for music. I have participatied in WorldSkillsUK Cyber Security placing 5th of out 250, and won silver in the WorldSkillsUK Hackathon. I have also built multiple CTF challenges from scratch and presented a lesson on basic hacking methods to people on my course and the year below. I am
-known for my leadership abilities and teamwork skills. In addition to my professional experience, I have
-successfully completed the Duke of Edinburgh's Bronze and Silver Awards.
-
-        </p>
-      </div>
-    </div>
-     <div class="qual" id="qualifications">
-      <div class="qualHeading">
-        <h1>My Qualifications</h1>
-      </div>
-      <div class="info">
-        <p>
-          
-        </p>
-      </div>
-    </div>
-    <div class="contact" id="contact">
-      <div class="contactHeading">
-        <h1>Contact Info</h1>
-      </div>
-      <div class="info">
-        <div class="infoPair">
-          <h1>Name:</h1>
-          <p>Solomon Hackett</p>
-        </div>
-        <div class="infoPair">
-          <h1>Email:</h1>
-          <p>solomonhackett2008@gmail.com</p>
-        </div>
-        <div class="infoPair">
-          <h1>Phone Number:</h1>
-          <p>07539320408</p>
-        </div>
-        <div class="infoPair">
-          <h1>CV:</h1>
-          <a href="/downloads/SolomonHackettCV.pdf" download>CV Download ⇩</a>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    <div id="qauls"></div>
+    <div id="contact"></div>
   </body>
 </html>
