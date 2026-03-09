@@ -1,26 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jaro:opsz@6..72&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <title>My Projects</title>
   </head>
-  <body>
-    <div class="nav" id="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#homeLab">Home Lab</a></li>
-        <li><a href="#coding">Coding</a></li>
-        <li><a href="#splash">Top</a></li>
-      </ul>
-    </div>
+  <body
+    class="bg-linear-to-t from-[#07FFFF] to-[#bdbde4] h-screen bg-no-repeat bg-cover"
+  >
+    <header class="fixed w-screen">
+      <nav
+        class="flex justify-center items-center mx-auto py-2 px-5 bg-white/40"
+      >
+        <ul class="flex items-center gap-[4vw] w-fit">
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="#about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="#quals"
+              >Qualifications</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="#contact"
+              >Contact Me</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              href="projects.html"
+              >My Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="splash" id="splash">
       <div class="heading">
         <h1>My Projects</h1>
@@ -75,9 +112,23 @@
       </div>
       <div class="info">
         <div class="writing">
-        <p>I have worked on multiple projects including a mock up
-        <a href="https://bsdc-sol.github.io">pentesting company website</a>
-        (unfinished) as a college assignment; a games and activities site designed to gather data to help a fictional company advertise, with working backend that gathers games from a database and displays them and has functional login and signup, also a college project; and this portfolio website. Additonally, I have built multiple CTF challenges for my peers to complete, and am working on a CTF challenge made with node.js that will be uploaded to TryHackMe as a challenge, this is to help me learn node.js and express so that I can complete a project assigned to me by <a href="https://www.uniqrecycling.co.uk/">Uniq Recycling</a> as part of my work placement hours for my T-Level Qualification. To view some of my projects, visit my <a href="https://github.com/solomon-hackett">GitHub page</a>.</p>
+          <p>
+            I have worked on multiple projects including a mock up
+            <a href="https://bsdc-sol.github.io">pentesting company website</a>
+            (unfinished) as a college assignment; a games and activities site
+            designed to gather data to help a fictional company advertise, with
+            working backend that gathers games from a database and displays them
+            and has functional login and signup, also a college project; and
+            this portfolio website. Additonally, I have built multiple CTF
+            challenges for my peers to complete, and am working on a CTF
+            challenge made with node.js that will be uploaded to TryHackMe as a
+            challenge, this is to help me learn node.js and express so that I
+            can complete a project assigned to me by
+            <a href="https://www.uniqrecycling.co.uk/">Uniq Recycling</a> as
+            part of my work placement hours for my T-Level Qualification. To
+            view some of my projects, visit my
+            <a href="https://github.com/solomon-hackett">GitHub page</a>.
+          </p>
         </div>
       </div>
     </div>
