@@ -10,47 +10,52 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>Solomon Hackett</title>
   </head>
   <body
-    class="bg-linear-to-t from-[#07FFFF] to-[#bdbde4] h-screen bg-no-repeat bg-cover"
+    class="bg-linear-to-b from-[#07FFFF] to-[#bdbde4] bg-no-repeat bg-auto"
   >
     <header class="fixed w-screen">
       <nav
-        class="flex justify-center items-center mx-auto py-2 px-5 bg-white/40"
+        class="flex justify-center items-center mx-auto py-3 px-2 bg-white/40 w-fit my-2 rounded-full"
       >
-        <ul class="flex items-center gap-[4vw] w-fit">
+        <ul class="flex items-center gap-[2vw] w-fit">
           <li>
             <a
-              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              class="nav-link transition duration-300 ease-in-out text-gray-300 text-3xl font-[Dosis] font-semibold bg-gray-800 px-3 py-1 rounded-full hover:bg-gray-600 hover:text-gray-300"
               href="#home"
               >Home</a
             >
           </li>
           <li>
             <a
-              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold bg-gray-300 px-3 py-1 rounded-full hover:bg-gray-600 hover:text-gray-300"
               href="#about"
               >About</a
             >
           </li>
           <li>
             <a
-              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold bg-gray-300 px-3 py-1 rounded-full hover:bg-gray-600 hover:text-gray-300"
               href="#quals"
               >Qualifications</a
             >
           </li>
           <li>
             <a
-              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold bg-gray-300 px-3 py-1 rounded-full hover:bg-gray-600 hover:text-gray-300"
               href="#contact"
               >Contact Me</a
             >
           </li>
           <li>
             <a
-              class="hover:text-gray-500 text-gray-800 text-2xl font-[Dosis] font-semibold"
+              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold bg-gray-300 px-3 py-1 rounded-full hover:bg-gray-600 hover:text-gray-300"
               href="projects.html"
               >My Projects</a
             >
@@ -60,7 +65,7 @@
     </header>
     <div
       id="home"
-      class="w-full h-full flex flex-col justify-center px-10 text-gray-800"
+      class="w-full h-screen flex flex-col justify-center px-10 text-gray-800"
     >
       <h1
         class="mb-4 text-9xl font-[Archivo Black] font-extrabold text-left underline"
@@ -71,10 +76,10 @@
         My portfolio, built from scratch.
       </h2>
     </div>
-    <div id="about">
+    <div id="about"     class="h-screen">
       <h1>About Me</h1>
       <iframe
-        class="w-fit"
+        class="w-full"
         src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1916860"
         style="border: none"
       ></iframe>
@@ -91,5 +96,26 @@
     </div>
     <div id="qauls"></div>
     <div id="contact"></div>
+    <script>
+      const links = document.querySelectorAll(".nav-link");
+
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          // reset all buttons
+          links.forEach((l) => {
+            l.classList.remove("bg-gray-800");
+            l.classList.add("bg-gray-300");
+            l.classList.remove("text-gray-300");
+            l.classList.add("text-gray-600");
+          });
+
+          // activate clicked button
+          link.classList.remove("bg-gray-300");
+          link.classList.add("bg-gray-800");
+          link.classList.remove("text-gray-600");
+          link.classList.add("text-gray-300");
+        });
+      });
+    </script>
   </body>
 </html>
