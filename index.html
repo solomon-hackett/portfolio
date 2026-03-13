@@ -66,34 +66,68 @@
       class="w-full h-screen flex flex-col justify-center px-10 text-gray-800"
     >
       <h1
-        class="mb-4 text-9xl font-[Archivo Black] font-extrabold text-left underline"
+        class="mb-4 text-[13vh] font-[Archivo Black] font-extrabold text-left underline"
       >
         Solomon Hackett
       </h1>
-      <h2 class="mb-4 text-4xl font-[Dosis] font-extrabold text-left">
+      <h2 class="mb-4 text-[5vh] font-[Dosis] font-extrabold text-left">
         My portfolio, built from scratch.
       </h2>
     </div>
-    <div id="about" class="h-screen">
-      <h1>About Me</h1>
-      <iframe
-        class="w-full"
-        src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1916860"
-        style="border: none"
-      ></iframe>
-      <p>
-        I am a hardworking, aspiring, and dedicated individual with a broad
-        skill set in IT and a passion for music. I have participatied in
-        WorldSkillsUK Cyber Security placing 5th of out 250, and won silver in
-        the WorldSkillsUK Hackathon. I have also built multiple CTF challenges
-        from scratch and presented a lesson on basic hacking methods to people
-        on my course and the year below. I am known for my leadership abilities
-        and teamwork skills. In addition to my professional experience, I have
-        successfully completed the Duke of Edinburgh's Bronze and Silver Awards.
-      </p>
+    <div
+      id="about"
+      class="h-screen w-screen flex flex-row items-center justify-between p-10 gap-20"
+    >
+      <div class="flex flex-col gap-10">
+        <h1
+          class="text-[9vh] font-[Archivo Black] font-extrabold text-left underline"
+        >
+          About Me
+        </h1>
+        <iframe
+          class="w-full"
+          src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1916860"
+          style="border: none"
+        ></iframe>
+      </div>
+      <div class="w-[60%]">
+        <p class="text-[4vh] text-right">
+          I am a hardworking, aspiring, and dedicated individual with a broad
+          skill set in IT and a passion for music. I have participatied in
+          WorldSkillsUK Cyber Security placing 5th of out 250, and won silver in
+          the WorldSkillsUK Hackathon. I have also built multiple CTF challenges
+          from scratch and presented a lesson on basic hacking methods to people
+          on my course and the year below. I am known for my leadership
+          abilities and teamwork skills. In addition to my professional
+          experience, I have successfully completed the Duke of Edinburgh's
+          Bronze and Silver Awards.
+        </p>
+      </div>
     </div>
     <div id="qauls"></div>
-    <div id="contact"></div>
+    <div id="contact">
+      <div class="contactHeading">
+        <h1>Contact Info</h1>
+      </div>
+      <div class="info">
+        <div class="infoPair">
+          <h1>Name:</h1>
+          <p>Solomon Hackett</p>
+        </div>
+        <div class="infoPair">
+          <h1>Email:</h1>
+          <p>solomonhackett2008@gmail.com</p>
+        </div>
+        <div class="infoPair">
+          <h1>Phone Number:</h1>
+          <p>07539320408</p>
+        </div>
+        <div class="infoPair">
+          <h1>CV:</h1>
+          <a href="/downloads/SolomonHackettCV.pdf" download>CV Download ⇩</a>
+        </div>
+      </div>
+    </div>
     <script>
       const links = document.querySelectorAll(".nav-link");
 
