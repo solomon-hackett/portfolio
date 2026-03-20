@@ -135,24 +135,5 @@
         </div>
       </div>
     </div>
-    <script>
-      const links = document.querySelectorAll(".nav-link");
-
-      links.forEach((link) => {
-        link.addEventListener("click", () => {
-          // reset all buttons
-          links.forEach((l) => {
-            l.classList.remove("bg-gray-800");
-            l.classList.remove("text-gray-300");
-            l.classList.add("text-gray-600");
-          });
-
-          // activate clicked button
-          link.classList.add("bg-gray-800");
-          link.classList.remove("text-gray-600");
-          link.classList.add("text-gray-300");
-        });
-      });
-    </script>
   </body>
 </html>
