@@ -20,9 +20,9 @@
   <body class="bg-linear-to-b from-[#07FFFF] to-[#bdbde4] bg-no-repeat bg-auto">
     <header class="fixed w-screen">
       <nav
-        class="flex justify-center items-center mx-auto py-3 px-2 bg-white/40 w-fit my-2 rounded-full"
+        class="flex justify-center items-center mx-auto py-3 px-2 bg-white/40 w-fit my-2 rounded-full shadow-lg"
       >
-        <ul class="flex items-center gap-[1vw] w-fit shadow-lg">
+        <ul class="flex items-center gap-[1vw] w-fit">
           <li>
             <a
               class="nav-link transition duration-300 ease-in-out text-gray-300 text-3xl font-[Dosis] font-semibold px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
@@ -32,28 +32,28 @@
           </li>
           <li>
             <a
-              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold bg-gray-300 px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
+              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
               href="#about"
               >About</a
             >
           </li>
           <li>
             <a
-              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold bg-gray-300 px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
+              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
               href="#quals"
               >Qualifications</a
             >
           </li>
           <li>
             <a
-              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold bg-gray-300 px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
+              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
               href="#contact"
               >Contact Me</a
             >
           </li>
           <li>
             <a
-              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold bg-gray-300 px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
+              class="nav-link transition duration-300 ease-in-out text-gray-600 text-3xl font-[Dosis] font-semibold px-4 py-1 rounded-full hover:bg-indigo-400 hover:text-gray-300 hover:inset-shadow-sm hover:inset-shadow-indigo-500/50"
               href="projects.html"
               >My Projects</a
             >
@@ -143,13 +143,11 @@
           // reset all buttons
           links.forEach((l) => {
             l.classList.remove("bg-gray-800");
-            l.classList.add("bg-gray-300");
             l.classList.remove("text-gray-300");
             l.classList.add("text-gray-600");
           });
 
           // activate clicked button
-          link.classList.remove("bg-gray-300");
           link.classList.add("bg-gray-800");
           link.classList.remove("text-gray-600");
           link.classList.add("text-gray-300");
